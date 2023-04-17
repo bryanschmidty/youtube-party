@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Host a Room</title>
+</head>
+<body>
+<h1>Host a Room</h1>
+<form action="/create-room" method="post">
+    <label for="room_name">Room Name:</label>
+    <input type="text" name="room_name" id="room_name" required>
+    <br>
+    <label for="private">Private:</label>
+    <input type="checkbox" name="private" id="private">
+    <br>
+    <label for="allow_anon">Allow Anonymous Users:</label>
+    <input type="checkbox" name="allow_anon" id="allow_anon">
+    <br>
+    <button type="submit">Create</button>
+</form>
+</body>
+</html>

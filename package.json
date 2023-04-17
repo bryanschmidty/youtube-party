@@ -1,0 +1,37 @@
+{
+  "name": "youtube-party",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanschmidty/youtube-party.git"
+  },
+  "author": "Bryan Schmidt",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/bryanschmidty/youtube-party/issues"
+  },
+  "homepage": "https://github.com/bryanschmidty/youtube-party#readme",
+  "dependencies": {
+    "axios": "^1.3.5",
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-socket.io-session": "^1.3.5",
+    "googleapis": "^118.0.0",
+    "ngrok": "^4.3.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.6.1",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0"
+  }
+}

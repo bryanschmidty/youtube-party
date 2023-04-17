@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rooms</title>
+</head>
+<body>
+    <% if (loggedIn) { %>
+        <a href="/logout">Logout</a>
+        <a href="/host">Host your own room</a>
+    <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+    <% } %>
+
+    <h2>Rooms</h2>
+    <ul>
+        <% rooms.forEach(room => { %>
+            <li><a href="/room/<%= room.uuid %>"><%= room.name %></a></li>
+        <% }) %>
+    </ul>
+
+    <% if (loggedIn) { %>
+    <h3>Join a private room</h3>
+    <form action="/join-private-room" method="post">
+        <label for="invite_code">Invite Code:</label>
+        <input type="text" name="invite_code" id="invite_code" required>
+        <button type="submit">Join</button>
+    </form>
+    <% } %>
+</body>
+</html>
